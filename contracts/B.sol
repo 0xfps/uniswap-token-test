@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity ^0.8.14;
+pragma solidity ^0.8.7;
 
 import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
@@ -10,7 +10,6 @@ import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 */
 contract B is ERC20 {
     constructor() ERC20("B", "BTK") {
-        _mint(msg.sender, 9000 * (10 ** 18));
-        _mint(address(this), 1000 * (10 ** 18));
+        _mint(msg.sender, 10000 * (10 ** 18));
     }
 }
